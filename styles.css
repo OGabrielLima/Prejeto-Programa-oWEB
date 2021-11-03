@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body {
+    background-size: cover;
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+/*menu*/
+    .cabecalho{
+        padding: 0;
+	    margin: 0;
+        top:0;
+        height: 25px;
+        background-color: white;
+        color: green;
+        text-align: center;
+
+    }
+
+    .brand h1 {
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Alfa Slab One', cursive;
+        color: yellow;
+        font-size: 30px;
+    }
+
+    .menu {
+        position: fixed; /*fixa o background*/
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999; /*não pode haver z-index maior que 999*/
+        /*z-index indica que essa div vai sobrepor outras divs com z-index menor que 999*/
+    }
+
+    .navbar-brand img  { /*esquerda*/
+        width: 70px;
+        height: 70px;  
+        border: 3px solid green;
+        border-radius: 100px;
+    }
+
+    .navbar-nav { /*meio*/
+        float:none;
+        margin:0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .form-inline button {
+        margin: 10px;
+        color: white;
+    }
+
+    .btn img { /*direita*/
+        width: 30px;
+        height: 30px; 
+    } 
+
+
+/*texto chamativo + botao cadastrar*/
+
+    figure.div-area-consumidor {
+        height: 700px;
+        position: relative;
+        background-image: url("../Prejeto-ProgramacaoWEB/imagens/img-para-texto-chamativo.jpg");
+        background-position: center center;
+        opacity: 0.8;   
+    }
+
+
+    .texto-chamativo{
+        color: black;
+        font-weight: 1000;
+        /*font-family: 'Alfa Slab One', cursive;*/
+        font-size: 30px;
+        position: absolute;
+        top: 200px;
+        right: 10%;  
+    }
+
+    .botao-cadastro button {
+        position: absolute;
+        top: 500px;
+        left: 45%; 
+    }
+
+
+
+/*--------------------------------------*/
+    .formulario{
+        border: lightgray solid 1px; 
+        margin: 140px auto; 
+        width: 800px;
+    }
+
+    .formularioLogin{
+        border: lightgray solid 1px; 
+        margin: 140px auto; 
+        text-align: center;
+        width: 350px;
+    }
+
+
+
+
+    @media all and (max-width: 800px ) {
+        .formularioLogin{
+            width: 350px;
+            margin-top: 400px;
+        }
+        .formulario{
+            width: 400px;
+            margin-top: 400px;
+        }
+        .col-md-6{
+            width: 400px;
+        }
+    }
+
+    
+
+
+
