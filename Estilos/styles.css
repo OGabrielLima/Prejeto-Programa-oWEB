@@ -217,6 +217,122 @@ body {
 .botao .botaoProdutos a:hover{
     color: white;
 }
+
+/*Estilos do Main*/
+.corpo {
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*Parte das imagens e do Vídeo*/
+figure {
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+figcaption{
+    margin-top: 10px;
+}
+
+
+/*Video*/
+#tituloVideo {
+    text-align: center;
+    background-color: lightgreen;
+    border-radius: 8px;
+}  
+   
+.video {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d3d3d;
+    width: 1200px;
+	margin-left:	auto;
+	margin-right:	auto;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+/*Depoimentos*/
+.depoimento {
+    font-family: "Poppins", sans-serif;
+    background-color: #fafafa;
+  }
+
+#tituloDepoimento {
+    text-align: center;
+    background-color: lightgreen;
+    border-radius: 8px;
+}  
+   
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+  }
+  
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+.card p {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+   
+.image {
+    float: right;
+    max-width: 64px;
+    max-height: 64px;
+  }
+  
+
+/*Contato*/
+.contato {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d3d3d;
+    width: 1200px;
+	margin-left:	auto;
+	margin-right:	auto;
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: lightgreen;
+    line-height: 10px;
+    padding-top: 15px;
+    border-radius: 8px;    
+}
+
+
+/*Redes Sociais*/
+.redes {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d3d3d;
+    width: 1200px;
+	margin-left:	auto;
+	margin-right:	auto;
+    text-align: center;
+    background-color: lightgreen;
+    line-height: 10px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+}
+
 /*Midia Mobile*/
     @media all and (max-width: 800px ) {
         .formularioLogin{
@@ -233,10 +349,15 @@ body {
         .form-inline .pesquisa{
             width: 100px;
         }
-        .texto-chamativo h1{
-            font-size: 30px;
+        .texto-chamativo{
+            top: 200px;
         }
-        .texto-chamativo h3{
+        .texto-chamativo h1{
             font-size: 20px;
         }
+        .texto-chamativo h3{
+            font-size: 15px;
+        }
     }
+
+    
