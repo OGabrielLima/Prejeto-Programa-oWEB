@@ -11,7 +11,7 @@ var listaProdutos = [[0, "Kit de marmitas na semana", "./imagens/combo semana.pn
 var carrinho = [];
 var tam = 4;
 window.onload = function () {  
-    //mostrarItensDoCarrinho();
+
     montarCardsProdutos(tam);
 }
 
@@ -43,6 +43,7 @@ function montarCardsProdutos(tamanho){
         conteudo += "</div>";
         document.getElementById("divProd").innerHTML += conteudo;
     } 
+
 }
 
 function comprar(id){
@@ -52,29 +53,3 @@ function comprar(id){
     montarCardsProdutos(tam);
 }
 
-function mostrarItensDoCarrinho(){
-    alert("entra aqui");
-    document.getElementById("divProdCarrinho").innerHTML = "";
-    storage = window.localStorage;
-    var itemCarrinho = JSON.parse(storage.getItem('carrinho'));
-    console.log(itemCarrinho);
-    for(var y=0; y < itemCarrinho; y++){
-        carrinho.push(itemCarrinho);
-    }
-
-    for(var i=0; i < carrinho.length; i++){
-        var conteudo = "";
-        conteudo += "<div class='div-card-prod'>";
-        conteudo += "<div class='div-card-img-prod'>";
-        conteudo += "<img width='100%' src='"+carrinho[i][2]+"'>";
-        conteudo += "</div>";
-        conteudo += "<div class='div-card-descricao-prod'>";
-        conteudo += "<h5>"+carrinho[i][1]+"<h5>";
-        conteudo += "</div>";
-        conteudo += "<div class='div-card-comprar-prod div-card-comprado-prod'>";
-        conteudo += "Adicionado ao Carrinho";
-        conteudo += "</div>";
-        conteudo += "</div>";
-        document.getElementById("divProdCarrinho").innerHTML += conteudo;
-    } 
-}
